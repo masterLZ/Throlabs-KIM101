@@ -23,5 +23,4 @@
 	<Item Name="KM101_StartCtrl.vi" Type="VI" URL="../KM101_StartCtrl.vi"/>
 	<Item Name="KM101_StopCtrl.vi" Type="VI" URL="../KM101_StopCtrl.vi"/>
 	<Item Name="KM101_StopMove.vi" Type="VI" URL="../KM101_StopMove.vi"/>
-	<Item Name="UserErrorHandle.vi" Type="VI" URL="../UserErrorHandle.vi"/>
 </Library>

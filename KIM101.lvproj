@@ -11,9 +11,15 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="KeyGray.vi" Type="VI" URL="../KeyGray.vi"/>
+		<Item Name="UserErrorHandle.vi" Type="VI" URL="../UserErrorHandle.vi"/>
+		<Item Name="消息通知.vi" Type="VI" URL="../消息通知.vi"/>
 		<Item Name="KIM101lib.lvlib" Type="Library" URL="../KIM101lib.lvlib"/>
+		<Item Name="KM101_Change_nm_step.vi" Type="VI" URL="../KM101_Change_nm_step.vi"/>
 		<Item Name="Switch.lvlib" Type="Library" URL="../Switch.lvlib"/>
+		<Item Name="电机枚举.ctl" Type="VI" URL="../电机枚举.ctl"/>
+		<Item Name="触发方式枚举.ctl" Type="VI" URL="../触发方式枚举.ctl"/>
+		<Item Name="通道枚举.ctl" Type="VI" URL="../通道枚举.ctl"/>
+		<Item Name="MotorFilter.vi" Type="VI" URL="../../界面新/MotorFilter.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
@@ -50,7 +56,11 @@
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 			</Item>
+			<Item Name="KeyGray.vi" Type="VI" URL="../KeyGray.vi"/>
+			<Item Name="位置调整控件.ctl" Type="VI" URL="../../位置调整控件.ctl"/>
+			<Item Name="setParameter.vi" Type="VI" URL="../../setParameter.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="KIM101DLL" Type="DLL">

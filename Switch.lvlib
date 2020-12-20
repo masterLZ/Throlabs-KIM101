@@ -4,7 +4,12 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">402685952</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Item Name="Switch_CheckConnect.vi" Type="VI" URL="../Switch_CheckConnect.vi"/>
 	<Item Name="Switch_Close.vi" Type="VI" URL="../Switch_Close.vi"/>
 	<Item Name="Switch_Connect.vi" Type="VI" URL="../Switch_Connect.vi"/>
+	<Item Name="Switch_FindCOM.vi" Type="VI" URL="../Switch_FindCOM.vi"/>
+	<Item Name="Switch_GetEdgeSig.vi" Type="VI" URL="../Switch_GetEdgeSig.vi"/>
+	<Item Name="Switch_RaiseEdgeEvent.vi" Type="VI" URL="../Switch_RaiseEdgeEvent.vi"/>
 	<Item Name="Switch_ReadProtocol.vi" Type="VI" URL="../Switch_ReadProtocol.vi"/>
+	<Item Name="Switch_Test.vi" Type="VI" URL="../Switch_Test.vi"/>
 </Library>
