@@ -13,14 +13,17 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="UserErrorHandle.vi" Type="VI" URL="../UserErrorHandle.vi"/>
 		<Item Name="消息通知.vi" Type="VI" URL="../消息通知.vi"/>
-		<Item Name="KIM101lib.lvlib" Type="Library" URL="../KIM101lib.lvlib"/>
-		<Item Name="KM101_Change_nm_step.vi" Type="VI" URL="../KM101_Change_nm_step.vi"/>
-		<Item Name="Switch.lvlib" Type="Library" URL="../Switch.lvlib"/>
 		<Item Name="电机枚举.ctl" Type="VI" URL="../电机枚举.ctl"/>
 		<Item Name="触发方式枚举.ctl" Type="VI" URL="../触发方式枚举.ctl"/>
 		<Item Name="通道枚举.ctl" Type="VI" URL="../通道枚举.ctl"/>
+		<Item Name="位置调整控件.ctl" Type="VI" URL="../../界面新/位置调整控件.ctl"/>
+		<Item Name="KIM101lib.lvlib" Type="Library" URL="../KIM101lib.lvlib"/>
+		<Item Name="Switch.lvlib" Type="Library" URL="../Switch.lvlib"/>
 		<Item Name="MotorFilter.vi" Type="VI" URL="../../界面新/MotorFilter.vi"/>
-		<Item Name="setParameter.vi" Type="VI" URL="../../setParameter.vi"/>
+		<Item Name="setParameter.vi" Type="VI" URL="../../界面新/setParameter.vi"/>
+		<Item Name="bitbug_favicon.ico" Type="Document" URL="../../../picomotor/bitbug_favicon.ico"/>
+		<Item Name="Password.vi" Type="VI" URL="../Password.vi"/>
+		<Item Name="KIMParam.csv" Type="Document" URL="../../KIMParam.csv"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
@@ -77,505 +80,150 @@
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 			</Item>
 			<Item Name="KeyGray.vi" Type="VI" URL="../KeyGray.vi"/>
-			<Item Name="位置调整控件.ctl" Type="VI" URL="../../位置调整控件.ctl"/>
 			<Item Name="GetParam.vi" Type="VI" URL="../GetParam.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="KIM101DLL" Type="DLL">
+			<Item Name="应用程序" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{6B06C074-085E-451B-8200-1581D5E1434F}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{904389B0-19E6-431E-AEFE-72EE86CC1B47}</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{AB8D6354-9D2F-4FED-BAA6-5FA3F93D9030}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{117D960F-432C-4957-89D7-DB44A52E29DB}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{BDD635F0-1B9A-4279-9F9A-7671F5BE543B}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">KIM101DLL</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{8077F1DA-970E-42C3-A07B-46E3F3486806}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">应用程序</Property>
 				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/KIMDLL</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/应用程序</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{184B485F-DDEF-4F28-8FD3-E38D8B542CBA}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{8F0BCF67-AF7A-4AE9-8156-5F7146F2A113}</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">KIM101.dll</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/KIMDLL/KIM101.dll</Property>
+				<Property Name="Destination[0].destName" Type="Str">以众滤波片.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/应用程序/以众滤波片.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/KIMDLL/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Dll_compatibilityWith2011" Type="Bool">false</Property>
-				<Property Name="Dll_delayOSMsg" Type="Bool">true</Property>
-				<Property Name="Dll_headerGUID" Type="Str">{106FC6DE-619D-4AC6-ADC8-2184050CEDC4}</Property>
-				<Property Name="Dll_libGUID" Type="Str">{92C36C90-0F0E-4826-9704-A6DD99DDF7F1}</Property>
-				<Property Name="Dll_privateExecSys" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9EF74F65-2F63-46E8-AB02-5546A11F7E50}</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/应用程序/data</Property>
+				<Property Name="Destination[2].destName" Type="Str">根目录</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/应用程序</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/bitbug_favicon.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A45D9B6B-4CC0-4A48-A9D6-1F819B28951B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]Name" Type="Str">KIM101lib_KM101_CreatActiveX</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">KIM</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">1</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!-!"!!!!%"!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!(3UF.UPX4QQ"5!0!!$!!!!!%!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!(A!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!)</Property>
-				<Property Name="Source[1].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">2</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_CreatActiveX.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MotorFilter.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]Name" Type="Str">KM101_StartCtrl</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!1!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!"'1(!!"Q%#!!!!!@V#LB01S5Z]D"[FT6V.E;M!!!!%&amp;(S4E]"%1B/B5@KI[76_JA!!!!%!!!!!$(*F:G6S:7ZD:3"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!#!!!$!!"Y!!!!!!!!!!!!!!U+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!1!$</Property>
-				<Property Name="Source[10].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">3</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_StartCtrl.vi</Property>
-				<Property Name="Source[10].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[10].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]Name" Type="Str">KM101_StopCtrl</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!1!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!"'1(!!"Q%#!!!!!@V#LB01S5Z]D"[FT6V.E;M!!!!%&amp;(S4E]"%1B/B5@KI[76_JA!!!!%!!!!!$(*F:G6S:7ZD:3"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!#!!!$!!"Y!!!!!!!!!!!!!!U+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!1!$</Property>
-				<Property Name="Source[11].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">3</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_StopCtrl.vi</Property>
-				<Property Name="Source[11].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[11].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">Channel</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]Name" Type="Str">KM101_StopMove</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!5!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!!.1!-!"U.I97ZO:7Q!2E"Q!!="!A!!!!(^1KY4U-F/@)Q?J=V&gt;4:'L!!!!""2]EZ0!2%)4I6([K/FF@K9!!!!"!!!!!!RS:7:F=G6O9W5A;7Y!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q!!!Q!!?!!!!!!!!!!!!!!.#A!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!I!!!!!!!!!!!%!"!</Property>
-				<Property Name="Source[12].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">4</Property>
-				<Property Name="Source[12].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_StopMove.vi</Property>
-				<Property Name="Source[12].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[12].type" Type="Str">ExportedVI</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]Name" Type="Str">KM101_IdentifyHarware</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!1!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!"'1(!!"Q%#!!!!!@V#LB01S5Z]D"[FT6V.E;M!!!!%&amp;(S4E]"%1B/B5@KI[76_JA!!!!%!!!!!$(*F:G6S:7ZD:3"J&lt;A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!!!!!!!!!!!#!!!$!!"Y!!!!!!!!!!!!!!U+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!1!$</Property>
-				<Property Name="Source[2].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">3</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_IdentifyHarware.vi</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">11</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">Channel</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">AbsSteps</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[4]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[4]VIProtoInputIdx" Type="Int">8</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[4]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[4]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[4]VIProtoName" Type="Str">bWait</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[4]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[4]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]Name" Type="Str">KM101_MoveAbsoluteStep</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfo[5]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!=!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!!+1#%&amp;9F&gt;B;81!$U!$!!B"9H.4&gt;'6Q=Q!!$5!$!!&gt;$;'&amp;O&lt;G6M!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!-=G6G:8*F&lt;G.F)'FO!!"5!0!!$!!!!!!!!1!!!!!!!!!!!!!!!A!$!!1!"1-!!(A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!I!!!!+!!!!#A!!!!!"!!9</Property>
-				<Property Name="Source[3].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">6</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_MoveAbsoluteStep.vi</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[3].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">Channel</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]Name" Type="Str">KM101_ReadPosition</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]VIProtoName" Type="Str">Steps</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]VIProtoOutputIdx" Type="Int">1</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfo[4]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!9!"!!!!!N!!Q!&amp;5X2F=(-!2E"Q!!="!A!!!!(^1KY4U-F/@)Q?J=V&gt;4:'L!!!!""2]EZ0!2%)4I6([K/FF@K9!!!!"!!!!!!VS:7:F=G6O9W5A&lt;X6U!!V!!Q!(1WBB&lt;GZF&lt;!"'1(!!"Q%#!!!!!@V#LB01S5Z]D"[FT6V.E;M!!!!%&amp;(S4E]"%1B/B5@KI[76_JA!!!!%!!!!!$(*F:G6S:7ZD:3"J&lt;A!!6!$Q!!Q!!!!"!!)!!!!!!!!!!!!!!!!!!Q!%!!!$!!"Y!!!!!!!!#1!!!!U+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!+!!!!#A!!!!!!!!!!!1!&amp;</Property>
-				<Property Name="Source[4].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_ReadPosition.vi</Property>
-				<Property Name="Source[4].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[4].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">Channel</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]Name" Type="Str">KM101_RotateNegtive</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]VIProtoName" Type="Str">Steps</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]VIProtoOutputIdx" Type="Int">1</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfo[4]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!9!"!!!!!N!!Q!&amp;5X2F=(-!2E"Q!!="!A!!!!(^1KY4U-F/@)Q?J=V&gt;4:'L!!!!""2]EZ0!2%)4I6([K/FF@K9!!!!"!!!!!!VS:7:F=G6O9W5A&lt;X6U!!V!!Q!(1WBB&lt;GZF&lt;!"'1(!!"Q%#!!!!!@V#LB01S5Z]D"[FT6V.E;M!!!!%&amp;(S4E]"%1B/B5@KI[76_JA!!!!%!!!!!$(*F:G6S:7ZD:3"J&lt;A!!6!$Q!!Q!!!!"!!)!!!!!!!!!!!!!!!!!!Q!%!!!$!!"Y!!!!!!!!#1!!!!U+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!+!!!!#A!!!!!!!!!!!1!&amp;</Property>
-				<Property Name="Source[5].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_RotateNegtive.vi</Property>
-				<Property Name="Source[5].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[5].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">Channel</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]Name" Type="Str">KM101_RotatePositive</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]VIProtoName" Type="Str">Steps</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]VIProtoOutputIdx" Type="Int">1</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfo[4]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!9!"!!!!!N!!Q!&amp;5X2F=(-!2E"Q!!="!A!!!!(^1KY4U-F/@)Q?J=V&gt;4:'L!!!!""2]EZ0!2%)4I6([K/FF@K9!!!!"!!!!!!VS:7:F=G6O9W5A&lt;X6U!!V!!Q!(1WBB&lt;GZF&lt;!"'1(!!"Q%#!!!!!@V#LB01S5Z]D"[FT6V.E;M!!!!%&amp;(S4E]"%1B/B5@KI[76_JA!!!!%!!!!!$(*F:G6S:7ZD:3"J&lt;A!!6!$Q!!Q!!!!"!!)!!!!!!!!!!!!!!!!!!Q!%!!!$!!"Y!!!!!!!!#1!!!!U+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!+!!!!#A!!!!!!!!!!!1!&amp;</Property>
-				<Property Name="Source[6].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_RotatePositive.vi</Property>
-				<Property Name="Source[6].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[6].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">HWSerialNum</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]Name" Type="Str">KM101_SerialCreat</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!5!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!!21!-!#UB85W6S;7&amp;M4H6N!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!-=G6G:8*F&lt;G.F)'FO!!"5!0!!$!!!!!!!!1!!!!!!!!!!!!!!!!!#!!-!!!-!!(A!!!!!!!!!!!!!$1I!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!)!!!!!!!!!!!"!!1</Property>
-				<Property Name="Source[7].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">4</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_SerialCreat.vi</Property>
-				<Property Name="Source[7].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[7].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">Channel</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]Name" Type="Str">KM101_SetChannelZero</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!5!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!!.1!-!"U.I97ZO:7Q!2E"Q!!="!A!!!!(^1KY4U-F/@)Q?J=V&gt;4:'L!!!!""2]EZ0!2%)4I6([K/FF@K9!!!!"!!!!!!RS:7:F=G6O9W5A;7Y!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q!!!Q!!?!!!!!!!!!!!!!!.#A!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!I!!!!!!!!!!!%!"!</Property>
-				<Property Name="Source[8].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">4</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_SetChannelZero.vi</Property>
-				<Property Name="Source[8].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[8].type" Type="Str">ExportedVI</Property>
-				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">10</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">referenceIn</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">9</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">Channel</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[3]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[3]VIProtoInputIdx" Type="Int">8</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[3]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[3]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[3]VIProtoName" Type="Str">lStepAccn</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[3]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[3]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[4]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[4]VIProtoInputIdx" Type="Int">7</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[4]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[4]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[4]VIProtoName" Type="Str">lStepRate</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[4]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[4]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[5]VIProtoDir" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[5]VIProtoInputIdx" Type="Int">6</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[5]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[5]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[5]VIProtoName" Type="Str">lVoltage</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[5]VIProtoOutputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[5]VIProtoPassBy" Type="Int">1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]CallingConv" Type="Int">1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]Name" Type="Str">KM101_SetParameter</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]VIProtoDir" Type="Int">1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]VIProtoInputIdx" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]VIProtoLenInput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]VIProtoLenOutput" Type="Int">-1</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]VIProtoName" Type="Str">referenceOut</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]VIProtoOutputIdx" Type="Int">2</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfo[6]VIProtoPassBy" Type="Int">0</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!A!"!!!!%:!=!!(!1)!!!!"`5+O%^$*4HS-(K8.85W2KQ!!!!15@*/4Q%2#%[&amp;2_KDJ:8[G!!!!!1!!!!!.=G6G:8*F&lt;G.F)'^V&gt;!!01!-!#'R7&lt;WRU97&gt;F!!!01!-!#7R4&gt;'6Q5G&amp;U:1!01!-!#7R4&gt;'6Q17.D&lt;A!.1!-!"U.I97ZO:7Q!2E"Q!!="!A!!!!(^1KY4U-F/@)Q?J=V&gt;4:'L!!!!""2]EZ0!2%)4I6([K/FF@K9!!!!"!!!!!!RS:7:F=G6O9W5A;7Y!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!)!!Q!%!!5!"A!!!Q!!?!!!!!!!!!!!!!!.#A!!!!!!!!!!!!!!!!!!#A!!!!I!!!!+!!!!#A!!!!I!!!!!!!!!!!%!"Q</Property>
-				<Property Name="Source[9].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">7</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/KIM101lib.lvlib/KM101_SetParameter.vi</Property>
-				<Property Name="Source[9].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[9].type" Type="Str">ExportedVI</Property>
-				<Property Name="SourceCount" Type="Int">13</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">KIM101DLL</Property>
-				<Property Name="TgtF_internalName" Type="Str">KIM101DLL</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/setParameter.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/KIMParam.csv</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">应用程序</Property>
+				<Property Name="TgtF_internalName" Type="Str">应用程序</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">版权 2020 </Property>
-				<Property Name="TgtF_productName" Type="Str">KIM101DLL</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{BE101EDC-D3BC-4F21-8D75-C2547701423E}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">KIM101.dll</Property>
+				<Property Name="TgtF_productName" Type="Str">on-union Filter</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{8C1A803F-F4DA-4D23-9A08-E9A433B20D28}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">以众滤波片.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="安装程序" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">YiZhong-Filter</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{752B1479-083E-4DF8-BF63-77EE8C8AEF6B}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">_deployment_</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{A0A2CF10-0C02-41DF-AC3F-1EBA24038C19}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI-VISA运行引擎 18.0</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
+				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{FEB8324C-1913-4673-9B2E-89F3D074E0BD}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI LabVIEW运行引擎 2018</Property>
+				<Property Name="DistPart[1].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[0].productName" Type="Str">NI LabVIEW运行引擎 2018非英语语言支持</Property>
+				<Property Name="DistPart[1].SoftDep[0].upgradeCode" Type="Str">{3C68D03D-EF38-41B5-9977-E27520759DD6}</Property>
+				<Property Name="DistPart[1].SoftDep[1].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[1].productName" Type="Str">NI ActiveX容器</Property>
+				<Property Name="DistPart[1].SoftDep[1].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
+				<Property Name="DistPart[1].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[10].productName" Type="Str">NI mDNS Responder 17.0</Property>
+				<Property Name="DistPart[1].SoftDep[10].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[1].SoftDep[11].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[11].productName" Type="Str">NI Deployment Framework 2018</Property>
+				<Property Name="DistPart[1].SoftDep[11].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[1].SoftDep[12].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[12].productName" Type="Str">NI错误报告 2018</Property>
+				<Property Name="DistPart[1].SoftDep[12].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[1].SoftDep[2].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[2].productName" Type="Str">数学核心库 2017</Property>
+				<Property Name="DistPart[1].SoftDep[2].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[1].SoftDep[3].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[3].productName" Type="Str">数学核心库 2018</Property>
+				<Property Name="DistPart[1].SoftDep[3].upgradeCode" Type="Str">{33A780B9-8BDE-4A3A-9672-24778EFBEFC4}</Property>
+				<Property Name="DistPart[1].SoftDep[4].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[4].productName" Type="Str">NI Logos 18.0</Property>
+				<Property Name="DistPart[1].SoftDep[4].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[1].SoftDep[5].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[5].productName" Type="Str">NI TDM Streaming 18.0</Property>
+				<Property Name="DistPart[1].SoftDep[5].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[1].SoftDep[6].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[6].productName" Type="Str">NI LabVIEW Web服务器 2018</Property>
+				<Property Name="DistPart[1].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
+				<Property Name="DistPart[1].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[7].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2018</Property>
+				<Property Name="DistPart[1].SoftDep[7].upgradeCode" Type="Str">{EF4708F6-5A34-4DBA-B12B-79CC2004E20B}</Property>
+				<Property Name="DistPart[1].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[8].productName" Type="Str">NI VC2010MSMs</Property>
+				<Property Name="DistPart[1].SoftDep[8].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
+				<Property Name="DistPart[1].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[9].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[1].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[1].SoftDepCount" Type="Int">13</Property>
+				<Property Name="DistPart[1].upgradeCode" Type="Str">{3B195EBF-4A09-46E6-8EAD-931568C1344C}</Property>
+				<Property Name="DistPartCount" Type="Int">2</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/滤光片安装程序</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">安装程序</Property>
+				<Property Name="INST_defaultDir" Type="Str">{752B1479-083E-4DF8-BF63-77EE8C8AEF6B}</Property>
+				<Property Name="INST_language" Type="Int">2052</Property>
+				<Property Name="INST_productName" Type="Str">滤光片安装程序</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.13</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">18008007</Property>
+				<Property Name="MSI_arpCompany" Type="Str">on-union</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
+				<Property Name="MSI_distID" Type="Str">{CA6D4634-53A8-4B8D-812E-94BDAA6671AB}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{79894266-7A95-48E4-8005-4F34343918FF}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{752B1479-083E-4DF8-BF63-77EE8C8AEF6B}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{752B1479-083E-4DF8-BF63-77EE8C8AEF6B}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">以众滤波片.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">滤波片</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str"></Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{8C1A803F-F4DA-4D23-9A08-E9A433B20D28}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">应用程序</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/应用程序</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
 		</Item>
 	</Item>

@@ -7,6 +7,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="KIMTest.vi" Type="VI" URL="../KIMTest.vi"/>
+	<Item Name="KM101_Change_nm_step.vi" Type="VI" URL="../KM101_Change_nm_step.vi"/>
 	<Item Name="KM101_CreatActiveX.vi" Type="VI" URL="../KM101_CreatActiveX.vi"/>
 	<Item Name="KM101_GetParameter.vi" Type="VI" URL="../KM101_GetParameter.vi"/>
 	<Item Name="KM101_IdentifyHarware.vi" Type="VI" URL="../KM101_IdentifyHarware.vi"/>
